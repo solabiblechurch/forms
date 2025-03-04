@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Prayer Request - Sola Bible Church Forms</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baselayer.css@latest/dist/baselayer-light.css" />
+		<link rel="stylesheet" href="public/style.css" />
+	</head>
+	<body>
+		<main class="layout">
+			<h2>Prayer Request</h2>
+			<form name="prayer-request" data-netlify="true">
+				<label>Name*<input type="text" id="name" name="name" autocomplete="name" required /></label>
+				<div class="form-row">
+					<label>Email*<input type="email" id="email" name="email" autocomplete="email" required /></label>
+					<label>Phone<input type="tel" id="phone" name="phone" autocomplete="tel" /></label>
+				</div>
+				<label for="prayer-request">Prayer Request*</label>
+				<textarea id="prayer-request" name="prayer-request" required></textarea>
+				<label><input type="checkbox" name="confidential" id="confidential" value="confidential" /> Confidential</label>
+				<p class="small">
+					<em
+						>Would you like your prayer request to be confidential? If so, only the pastor and elders will see your
+						request.</em
+					>
+				</p>
+				<label><input type="checkbox" name="follow-up" id="follow-up" value="follow-up" /> Follow Up</label>
+				<p class="small"><em>Would you like a follow-up from a pastor/elder?</em></p>
+				<button>Submit</button>
+			</form>
+		</main>
+	</body>
+</html>
